@@ -4,6 +4,8 @@ import 'package:pokedex/screens/home/home.dart';
 import 'package:pokedex/screens/pokedex/pokedex.dart';
 import 'package:pokedex/screens/pokemon_info/pokemon_info.dart';
 import 'package:pokedex/widgets/fade_page_route.dart';
+import 'package:pokedex/screens/moves/moves.dart';
+import 'package:pokedex/screens/ability/ability.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +18,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         fontFamily: 'CircularStd',
-        textTheme: Theme.of(context).textTheme.apply(displayColor: AppColors.black),
+        textTheme:
+            Theme.of(context).textTheme.apply(displayColor: AppColors.black),
         scaffoldBackgroundColor: AppColors.lightGrey,
         primarySwatch: Colors.blue,
       ),
@@ -34,6 +37,10 @@ class MyApp extends StatelessWidget {
 
       case '/pokemon-info':
         return FadeRoute(page: PokemonInfo());
+      case '/moves':
+        return FadeRoute(page: Moves());
+      case '/ability':
+        return FadeRoute(page: Ability());
 
       default:
         return null;

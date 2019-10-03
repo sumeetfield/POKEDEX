@@ -18,7 +18,7 @@ class CategoryList extends StatelessWidget {
       itemCount: categories.length,
       itemBuilder: (context, index) => PokeCategoryCard(
         categories[index],
-        onPress: () => Navigator.of(context).pushNamed("/pokedex"),
+        onPress: () => Navigator.of(context).pushNamed(categories[index].page),
       ),
     );
   }
