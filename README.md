@@ -44,7 +44,7 @@ Go to the [releases page](https://github.com/scitbiz/flutter_pokedex/releases) t
 - [x] Pokemon Info - About
 - [x] Pokemon Info - Base Stats
 - [x] Pokemon Info - Evolution
-- [ ] Pokemon Info - Moves (no design)
+- [x] Pokemon Info - Moves (no design)
 - [x] Pokemon Info - Make tab area expandable
 - [x] Pokemon Info - Add animations
 - [ ] Pokemon Info - Add more Pokemons
